@@ -1,0 +1,140 @@
+.chat{
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid #f69191;
+    padding: 20px;
+    background: #e4e3e3;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* height: 500px; */
+}
+
+#chat-box {
+    height: 300px; /* Set the desired height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px;
+    border: 1px solid #ddd; /* Optional: Add a border */
+    margin-bottom: 20px; /* Optional: Add some space at the bottom */
+}
+
+.chat-message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background: #e6e6e6;
+}
+
+.chat-message.self {
+    background: #d1ffd1;
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+.chat-message.other {
+    background: #b1e7f5;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+
+
+.chat-message .timestamp {
+    display: block;
+    font-size: 0.8em;
+    color: #666;
+}
+
+#chat-form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+    
+}
+
+#chat-form button {
+    padding: 10px;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.messages .btn{
+    padding: 10px;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.messages .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 35rem);
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: flex-start;
+ }
+ 
+ .messages .box-container .box{
+    background-color: var(--white);
+    padding: 2rem;
+    padding-top: 1rem;
+    box-shadow: var(--box-shodow);
+    font-size: 1.5rem;
+ }
+
+ .unread {
+    background-color: #f9f9f9;
+    border: 2px solid #ff0000;
+}
+.file-input-container {
+    display: inline-block;
+    position: relative;
+}
+
+.file-upload {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    color: #333;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.file-upload i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.file-input-container input[type="file"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+}
+.file-upload .hover {
+    background-color: #007bff;
+}
+
+#file-name {
+    font-size: 16px;
+    font-family: inherit;
+    color: #333;
+}

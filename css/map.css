@@ -1,0 +1,26 @@
+#map {
+    height: 500px;
+    width: 100%;
+}
+#backButton {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius:8px;
+}
+.legend {
+    background: white;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+}
+.legend img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.legend div {
+    margin-bottom: 5px;
+}
